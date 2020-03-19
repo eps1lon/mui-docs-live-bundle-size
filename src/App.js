@@ -1,9 +1,9 @@
 import React from "react";
 import prettyBytes from "pretty-bytes";
 import styled from "styled-components";
-import WebpackWorker from "./webpack.worker.js";
+import BundleWorker from "./bundle.worker.js";
 
-const worker = new WebpackWorker();
+const worker = new BundleWorker();
 
 const Main = styled.main({
 	padding: 16,
