@@ -1,4 +1,4 @@
-import * as rollup from "rollup";
+import * as rollup from "rollup/dist/rollup.browser";
 import virtual from "@rollup/plugin-virtual";
 import { minify } from "terser";
 import urlResolve from "url-resolve-browser";
