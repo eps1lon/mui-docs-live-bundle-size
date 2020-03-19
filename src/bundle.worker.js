@@ -103,7 +103,12 @@ async function handleBundle(input, options) {
 			{
 				name: "terser-browser",
 				renderChunk(code, chunk, outputOptions) {
-					return minify(code, { ecma: 6, ...options.terserOptions });
+					// importing from rollup/dist prefixes the generated code
+					// with `undefined` for some reason
+					return minify(code.replace(/^undefined(.+)/, "$1"), {
+						ecma: 6,
+						...options.terserOptions
+					});
 				}
 			}
 		]
