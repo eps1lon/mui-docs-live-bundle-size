@@ -13,8 +13,8 @@ const Main = styled.main({
 const Source = styled.textarea({
 	display: "block",
 	font: "monospace",
-	width: "120ch",
-	height: "70vh"
+	width: "100ch",
+	height: "50vh"
 });
 
 const AccessibleSummary = styled.summary({
