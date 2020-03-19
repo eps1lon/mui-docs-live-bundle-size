@@ -1,0 +1,39 @@
+{
+	"name": "webpackworker",
+	"version": "1.0.0",
+	"description": "experimenting",
+	"keywords": [],
+	"main": "src/index.js",
+	"dependencies": {
+		"@rollup/plugin-virtual": "^2.0.1",
+		"pretty-bytes": "^5.3.0",
+		"react": "16.13.0",
+		"react-dom": "16.13.0",
+		"rollup": "^2.1.0",
+		"rollup-plugin-url-resolve": "^0.1.1",
+		"styled-components": "5.0.1",
+		"terser": "^4.6.7",
+		"url-resolve-browser": "^1.1.0"
+	},
+	"devDependencies": {
+		"customize-cra": "^0.9.1",
+		"react-app-rewired": "^2.1.5",
+		"react-scripts": "3.0.1",
+		"worker-loader": "^2.0.0"
+	},
+	"scripts": {
+		"start": "react-app-rewired start",
+		"build": "react-app-rewired build",
+		"test": "react-app-rewired test --env=jsdom",
+		"eject": "react-app-rewired eject"
+	},
+	"browserslist": [
+		">0.2%",
+		"not dead",
+		"not ie <= 11",
+		"not op_mini all"
+	],
+	"prettier": {
+		"useTabs": true
+	}
+}
